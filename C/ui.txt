@@ -1,0 +1,12 @@
+Tokens:
+id: ID
++: PLUS
+'*': TIMES
+'(': LPAREN
+')': RPAREN
+
+Reglas:
+tokens: ws | id { return ID } | + { return PLUS } | '*' { return TIMES } | '(' { return LPAREN } | ')' { return RPAREN }
+
+Expresion:
+id|\+|\*|\(|\)
